@@ -19,7 +19,7 @@ class LineTest extends \PHPUnit\Framework\TestCase
         $dotenv = Dotenv::createImmutable(__DIR__ . '/..');
         $dotenv->load();
 
-        $this->line = new Line($_ENV['LINE_ACCESS_TOKEN']);
+        $this->line = new Line($_ENV['LINE_NOTIFY_TOKEN']);
     }
 
     public function test_send_message()

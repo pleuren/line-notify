@@ -19,12 +19,12 @@ composer require phattarachai/line-notify
 
 ## Laravel Usage
 
-Add a `LINE_ACCESS_TOKEN`  variable to your `.env`. You can get an access token for your application
+Add a `LINE_NOTIFY_TOKEN`  variable to your `.env`. You can get an access token for your application
 from [Line Notify API](https://notify-bot.line.me/my/)
 
 ```env
 // .env
-LINE_ACCESS_TOKEN=#Token Go here#
+LINE_NOTIFY_TOKEN=#Token Go here#
 ```
 
 Send a message via Line Notify.
@@ -93,7 +93,7 @@ You can set the token in this file.
 ```php
 // File: /config/line-notify.php
 return [
-    'access_token' => env('LINE_ACCESS_TOKEN', null),
+    'access_token' => env('LINE_NOTIFY_TOKEN', null),
 ];
 ```
 
